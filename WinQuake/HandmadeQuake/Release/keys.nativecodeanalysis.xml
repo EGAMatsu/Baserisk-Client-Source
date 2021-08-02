@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>keys.c</FILENAME>
+      <LINE>231</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'key_lines':  the readable size is '8192' bytes, but 'edit_line' bytes may be read.</DESCRIPTION>
+    <FUNCTION>Key_Console</FUNCTION>
+    <DECORATED>Key_Console</DECORATED>
+    <FUNCLINE>159</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>161</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>163</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'key==13' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>178</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'key==9' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>194</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'key==127||key==130' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>201</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'key==128' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>215</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this branch, (assume 'key==129')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>217</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'history_line==edit_line' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>220</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>223</LINE>
+        <COLUMN>3</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this loop, (assume '&lt;branch condition&gt;' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>224</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume 'history_line==edit_line' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'key_lines' is an Output from 'Q_strcpy' (declared at c:\users\theminingboy\downloads\quake-vs2015-master\quake-vs2015-master\winquake\common.h:127)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+        <FILENAME>keys.c</FILENAME>
+        <LINE>231</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'key_lines[32]', (readable range is 0 to 31)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

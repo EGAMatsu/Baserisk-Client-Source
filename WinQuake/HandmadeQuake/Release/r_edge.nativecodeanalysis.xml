@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>490</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>491</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>495</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>528</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>529</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>533</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_LeadingEdge</FUNCTION>
+    <DECORATED>R_LeadingEdge</DECORATED>
+    <FUNCLINE>460</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_edge.c</FILENAME>
+      <LINE>663</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '48048' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>R_ScanEdges</FUNCTION>
+    <DECORATED>R_ScanEdges</DECORATED>
+    <FUNCLINE>663</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

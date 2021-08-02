@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>sys_win.c</FILENAME>
+      <LINE>248</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: '_mkdir'.</DESCRIPTION>
+    <FUNCTION>Sys_mkdir</FUNCTION>
+    <DECORATED>Sys_mkdir</DECORATED>
+    <FUNCLINE>246</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>sys_win.c</FILENAME>
+      <LINE>540</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '20504' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>Sys_ConsoleInput</FUNCTION>
+    <DECORATED>Sys_ConsoleInput</DECORATED>
+    <FUNCLINE>540</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>sys_win.c</FILENAME>
+      <LINE>677</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>28251</DEFECTCODE>
+    <DESCRIPTION>Inconsistent annotation for 'WinMain': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\winbase.h(933). </DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>677</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>sys_win.c</FILENAME>
+      <LINE>695</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>28159</DEFECTCODE>
+    <DESCRIPTION>Consider using 'GlobalMemoryStatusEx' instead of 'GlobalMemoryStatus'. Reason: Deprecated. See MSDN for details</DESCRIPTION>
+    <FUNCTION>WinMain</FUNCTION>
+    <DECORATED>WinMain@16</DECORATED>
+    <FUNCLINE>677</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

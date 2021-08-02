@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>400</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasSetUpTransform</FUNCTION>
+    <DECORATED>R_AliasSetUpTransform</DECORATED>
+    <FUNCLINE>337</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>402</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasSetUpTransform</FUNCTION>
+    <DECORATED>R_AliasSetUpTransform</DECORATED>
+    <FUNCLINE>337</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>470</LINE>
+      <COLUMN>55</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasTransformAndProjectFinalVerts</FUNCTION>
+    <DECORATED>R_AliasTransformAndProjectFinalVerts</DECORATED>
+    <FUNCLINE>459</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>470</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasTransformAndProjectFinalVerts</FUNCTION>
+    <DECORATED>R_AliasTransformAndProjectFinalVerts</DECORATED>
+    <FUNCLINE>459</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>470</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasTransformAndProjectFinalVerts</FUNCTION>
+    <DECORATED>R_AliasTransformAndProjectFinalVerts</DECORATED>
+    <FUNCLINE>459</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>470</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>R_AliasTransformAndProjectFinalVerts</FUNCTION>
+    <DECORATED>R_AliasTransformAndProjectFinalVerts</DECORATED>
+    <FUNCLINE>459</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\TheMiningBoy\Downloads\Quake-VS2015-master\Quake-VS2015-master\WinQuake\</FILEPATH>
+      <FILENAME>r_alias.c</FILENAME>
+      <LINE>703</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '88036' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>R_AliasDrawModel</FUNCTION>
+    <DECORATED>R_AliasDrawModel</DECORATED>
+    <FUNCLINE>703</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
