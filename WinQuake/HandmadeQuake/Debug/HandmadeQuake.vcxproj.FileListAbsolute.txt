@@ -1,0 +1,2 @@
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\HandmadeQuake\Debug\HandmadeQuake.exe
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\HandmadeQuake\Debug\HandmadeQuake.pdb

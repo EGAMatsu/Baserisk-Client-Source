@@ -420,7 +420,7 @@ void M_SinglePlayer_Key (int key)
 			if (sv.active)
 				Cbuf_AddText ("disconnect\n");
 			Cbuf_AddText ("maxplayers 1\n");
-			Cbuf_AddText ("map start\n");
+			Cbuf_AddText ("map map00\n");
 			break;
 
 		case 1:

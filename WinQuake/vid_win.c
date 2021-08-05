@@ -645,9 +645,9 @@ void VID_InitMGLDIB(HINSTANCE hInstance)
 	MGL_initWindowed("");
 
 	modelist[0].type = MS_WINDOWED;
-	modelist[0].width = 320;
-	modelist[0].height = 240;
-	strcpy(modelist[0].modedesc, "320x240");
+	modelist[0].width = 1152;
+	modelist[0].height = 648;
+	strcpy(modelist[0].modedesc, "16:9");
 	modelist[0].mode13 = 0;
 	modelist[0].modenum = MODE_WINDOWED;
 	modelist[0].stretched = 0;
@@ -680,17 +680,6 @@ void VID_InitMGLDIB(HINSTANCE hInstance)
 	modelist[2].halfscreen = 0;
 	modelist[2].bpp = 8;
 
-	modelist[3].type = MS_FULLSCREEN;
-	modelist[3].width = 800;
-	modelist[3].height = 600;
-	strcpy(modelist[3].modedesc, "SAGE RES");
-	modelist[3].mode13 = 0;
-	modelist[3].modenum = MODE_FULLSCREEN_DEFAULT;
-	modelist[3].stretched = 1;
-	modelist[3].dib = 1;
-	modelist[3].fullscreen = 0;
-	modelist[3].halfscreen = 0;
-	modelist[3].bpp = 32;
 
 // automatically stretch the default mode up if > 640x480 desktop resolution
 	hdc = GetDC(NULL);
