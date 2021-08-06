@@ -1701,6 +1701,7 @@ void M_Quit_Draw (void)
 	M_Print(16, 52, " RinniFire, PeaceDragonVA\n");
 	M_Print(16, 60, " Devilartist, ConnorsCanceled\n");
 	M_Print(16, 68, " Noobion2, Pixel Brush\n");
+	M_Print(16, 76, " GHOST.101\n");
 
 	M_PrintWhite(16, 172-32-8, "Hello RummySM dm me next time\n");
 	M_PrintWhite(16, 172-32, "the trailer is bad lmao\n");
