@@ -42,10 +42,10 @@ cvar_t	cl_rollspeed = {"cl_rollspeed", "200"};
 cvar_t	cl_rollangle = {"cl_rollangle", "2.0"};
 
 cvar_t	cl_bob = {"cl_bob","0.02", false};
-cvar_t	cl_bobcycle = {"cl_bobcycle","0.6", false};
+cvar_t	cl_bobcycle = {"cl_bobcycle","0.75", false};
 cvar_t	cl_bobup = {"cl_bobup","0.5", false};
 
-cvar_t	v_kicktime = {"v_kicktime", "0.5", false};
+cvar_t	v_kicktime = {"v_kicktime", "1", false};
 cvar_t	v_kickroll = {"v_kickroll", "0.6", false};
 cvar_t	v_kickpitch = {"v_kickpitch", "0.6", false};
 
@@ -112,6 +112,8 @@ V_CalcBob
 float V_CalcBob (void)
 {
 	float	bob;
+	float	bobx;
+	float	invertbobx;
 	float	cycle;
 	
 	cycle = cl.time - (int)(cl.time/cl_bobcycle.value)*cl_bobcycle.value;
@@ -127,10 +129,12 @@ float V_CalcBob (void)
 	bob = sqrt(cl.velocity[0]*cl.velocity[0] + cl.velocity[1]*cl.velocity[1]) * cl_bob.value;
 //Con_Printf ("speed: %5.1f\n", Length(cl.velocity));
 	bob = bob*0.3 + bob*0.7*sin(cycle);
+	/*
 	if (bob > 4)
 		bob = 4;
 	else if (bob < -7)
 		bob = -7;
+	*/
 	return bob;
 	
 }
@@ -868,6 +872,8 @@ void V_CalcRefdef (void)
 	vec3_t		forward, right, up;
 	vec3_t		angles;
 	float		bob;
+	float		bobx=0;
+	float		invertbobx;
 	static float oldz = 0;
 
 	V_DriftPitch ();
@@ -887,6 +893,22 @@ void V_CalcRefdef (void)
 										
 	
 	bob = V_CalcBob ();
+
+	if (bobx > 0.6) {
+		invertbobx = 1;
+	}
+
+	if (bobx < 0.6) {
+		invertbobx = 0;
+	}
+
+	if (invertbobx ==0) {
+	bobx = bobx + 0.01;
+	}
+
+	if (invertbobx == 1) {
+		bobx = bobx - 0.01;
+	}
 	
 // refresh position
 	VectorCopy (ent->origin, r_refdef.vieworg);
@@ -929,9 +951,17 @@ void V_CalcRefdef (void)
 
 	for (i=0 ; i<3 ; i++)
 	{
-		view->origin[i] += forward[i]*bob*0.4;
-//		view->origin[i] += right[i]*bob*0.4;
-//		view->origin[i] += up[i]*bob*0.8;
+		if (bob > 0) {
+			view->origin[i] += up[i] * (bob * -0.125);
+		}
+		else if (bob < 0) {
+			view->origin[i] += up[i] * (bob * 0.125);
+		}
+		if (bob == 0) {
+			view->origin[i] += up[i] * 0;
+		}
+		view->origin[i] += right[i]*(bob*0.3);
+		//view->origin[i] += forward[i]*(bob*0.5);
 	}
 	view->origin[2] += bob;
 
@@ -996,7 +1026,7 @@ void V_RenderView (void)
 {
 	if (con_forcedup)
 		return;
-
+	float bob;
 // don't allow cheats in multiplayer
 	if (cl.maxclients > 1)
 	{
@@ -1019,6 +1049,7 @@ void V_RenderView (void)
 
 	if (lcd_x.value)
 	{
+
 		//
 		// render two interleaved views
 		//
@@ -1055,11 +1086,13 @@ void V_RenderView (void)
 
 #ifndef GLQUAKE
 	if (crosshair.value)
-		Draw_Character (scr_vrect.x + scr_vrect.width/2 + cl_crossx.value - 8, 
+
+	bob = V_CalcBob();
+		Draw_Character (0 + scr_vrect.x + scr_vrect.width/2 + cl_crossx.value - 8,
 			scr_vrect.y + scr_vrect.height/2 + cl_crossy.value, '(');
-		Draw_Character(scr_vrect.x + scr_vrect.width / 2 + cl_crossx.value,
+		Draw_Character(bob + scr_vrect.x + scr_vrect.width / 2 + cl_crossx.value,
 			scr_vrect.y + scr_vrect.height / 2 + cl_crossy.value, '-');
-		Draw_Character(scr_vrect.x + scr_vrect.width / 2 + cl_crossx.value + 8,
+		Draw_Character(0 + scr_vrect.x + scr_vrect.width / 2 + cl_crossx.value + 8,
 			scr_vrect.y + scr_vrect.height / 2 + cl_crossy.value, ')');
 #endif
 		

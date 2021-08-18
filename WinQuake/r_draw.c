@@ -24,7 +24,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "r_local.h"
 #include "d_local.h"	// FIXME: shouldn't need to include this
 
-#define MAXLEFTCLIPEDGES		100
+#define MAXLEFTCLIPEDGES		8192
 
 // !!! if these are changed, they must be changed in asm_draw.h too !!!
 #define FULLY_CLIPPED_CACHED	0x80000000

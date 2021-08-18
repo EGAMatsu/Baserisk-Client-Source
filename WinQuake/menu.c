@@ -1214,9 +1214,10 @@ void M_Options_Draw (void)
 
 	if (vid_menudrawfn)
 		M_Print (16, 120 + 8 - 8, "       Graphic Options");
+		M_Print(16, 128, "       ");
 
 #ifdef _WIN32
-	if (modestate == MS_WINDOWED)
+	if (modestate == MS_WINDOWED);
 	{
 		M_Print (16, 128 + 8 - 8, "             Use Mouse");
 		M_DrawCheckbox (220, 128 + 8 - 8, _windowed_mouse.value);

@@ -129,10 +129,10 @@ cvar_t	r_dspeeds = {"r_dspeeds","0"};
 cvar_t	r_drawflat = {"r_drawflat", "0"};
 cvar_t	r_ambient = {"r_ambient", "0"};
 cvar_t	r_reportsurfout = {"r_reportsurfout", "0"};
-cvar_t	r_maxsurfs = {"r_maxsurfs", "0"};
+cvar_t	r_maxsurfs = {"r_maxsurfs", "16777216"};
 cvar_t	r_numsurfs = {"r_numsurfs", "0"};
 cvar_t	r_reportedgeout = {"r_reportedgeout", "0"};
-cvar_t	r_maxedges = {"r_maxedges", "0"};
+cvar_t	r_maxedges = {"r_maxedges", "16777216"};
 cvar_t	r_numedges = {"r_numedges", "0"};
 cvar_t	r_aliastransbase = {"r_aliastransbase", "200"};
 cvar_t	r_aliastransadj = {"r_aliastransadj", "100"};
@@ -214,8 +214,8 @@ void R_Init (void)
 	Cvar_RegisterVariable (&r_aliastransbase);
 	Cvar_RegisterVariable (&r_aliastransadj);
 
-	Cvar_SetValue ("r_maxedges", (float)NUMSTACKEDGES);
-	Cvar_SetValue ("r_maxsurfs", (float)NUMSTACKSURFACES);
+	Cvar_SetValue ("r_maxedges", 8192);
+	Cvar_SetValue ("r_maxsurfs", 8192);
 
 	view_clipplanes[0].leftedge = true;
 	view_clipplanes[1].rightedge = true;

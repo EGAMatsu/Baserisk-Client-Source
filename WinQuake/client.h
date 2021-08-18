@@ -94,7 +94,7 @@ typedef struct
 
 #define	MAX_EFRAGS		640
 
-#define	MAX_MAPSTRING	2048
+#define	MAX_MAPSTRING	8192
 #define	MAX_DEMOS		8
 #define	MAX_DEMONAME	16
 
@@ -269,8 +269,8 @@ extern	cvar_t	m_forward;
 extern	cvar_t	m_side;
 
 
-#define	MAX_TEMP_ENTITIES	64			// lightning bolts, etc
-#define	MAX_STATIC_ENTITIES	128			// torches, etc
+#define	MAX_TEMP_ENTITIES	256			// lightning bolts, etc
+#define	MAX_STATIC_ENTITIES	1024			// torches, etc
 
 extern	client_state_t	cl;
 
