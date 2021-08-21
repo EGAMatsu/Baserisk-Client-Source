@@ -74,6 +74,96 @@ qboolean	r_lastvertvalid;
 
 /*
 ================
+Draw_LoadingBG
+================
+*/
+void Draw_LoadingBG(int lines)
+{
+	int				x, y, v;
+	byte* src, * dest;
+	unsigned short* pusdest;
+	int				f, fstep;
+	qpic_t* loadbg;
+	char			ver[100];
+
+	loadbg = Draw_CachePic("gfx/loadbg.lmp");
+
+	// hack the version number directly into the pic
+#ifdef _WIN32
+	sprintf(ver, "");
+	dest = loadbg->data + 320 * 186 + 320 - 11 - 8 * strlen(ver);
+#elif defined(X11)
+	sprintf(ver, "(X11 Quake %2.2f) %4.2f", (float)X11_VERSION, (float)VERSION);
+	dest = conback->data + 320 * 186 + 320 - 11 - 8 * strlen(ver);
+#elif defined(__linux__)
+	sprintf(ver, "(Linux Quake %2.2f) %4.2f", (float)LINUX_VERSION, (float)VERSION);
+	dest = conback->data + 320 * 186 + 320 - 11 - 8 * strlen(ver);
+#else
+	dest = conback->data + 320 - 43 + 320 * 186;
+	sprintf(ver, "%4.2f", VERSION);
+#endif
+
+	for (x = 0; x < strlen(ver); x++)
+		Draw_CharToConback(ver[x], dest + (x << 3));
+
+	// draw the pic
+	if (r_pixbytes == 1)
+	{
+		dest = vid.conbuffer;
+
+		for (y = 0; y < lines; y++, dest += vid.conrowbytes)
+		{
+			v = (vid.conheight - lines + y) * 200 / vid.conheight;
+			src = loadbg->data + v * 320;
+			if (vid.conwidth == 320)
+				memcpy(dest, src, vid.conwidth);
+			else
+			{
+				f = 0;
+				fstep = 320 * 0x10000 / vid.conwidth;
+				for (x = 0; x < vid.conwidth; x += 4)
+				{
+					dest[x] = src[f >> 16];
+					f += fstep;
+					dest[x + 1] = src[f >> 16];
+					f += fstep;
+					dest[x + 2] = src[f >> 16];
+					f += fstep;
+					dest[x + 3] = src[f >> 16];
+					f += fstep;
+				}
+			}
+		}
+	}
+	else
+	{
+		pusdest = (unsigned short*)vid.conbuffer;
+
+		for (y = 0; y < lines; y++, pusdest += (vid.conrowbytes >> 1))
+		{
+			// FIXME: pre-expand to native format?
+			// FIXME: does the endian switching go away in production?
+			v = (vid.conheight - lines + y) * 200 / vid.conheight;
+			src = loadbg->data + v * 320;
+			f = 0;
+			fstep = 320 * 0x10000 / vid.conwidth;
+			for (x = 0; x < vid.conwidth; x += 4)
+			{
+				pusdest[x] = d_8to16table[src[f >> 16]];
+				f += fstep;
+				pusdest[x + 1] = d_8to16table[src[f >> 16]];
+				f += fstep;
+				pusdest[x + 2] = d_8to16table[src[f >> 16]];
+				f += fstep;
+				pusdest[x + 3] = d_8to16table[src[f >> 16]];
+				f += fstep;
+			}
+		}
+	}
+}
+
+/*
+================
 R_EmitEdge
 ================
 */

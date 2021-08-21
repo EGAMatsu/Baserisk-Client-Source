@@ -367,7 +367,7 @@ void SCR_DrawUI(void) {
 	char	str[80];
 	sprintf(str, "Health:%3i", cl.stats[STAT_HEALTH]);
 
-	Draw_TransPic (scr_vrect.x + 36, scr_vrect.y + vid.height - 50, medikitgfx); //draw face
+	Draw_TransPic (scr_vrect.x + 36, scr_vrect.y + vid.height - 50, medikitgfx); //draw medikit
 
 	Draw_TransPic(scr_vrect.x + 7, scr_vrect.y + vid.height - 25, hpbg); //draw health bg
 	Draw_String (scr_vrect.x + 9, scr_vrect.y + vid.height - 23, str); //and text
@@ -430,8 +430,7 @@ void SCR_DrawPause (void)
 		return;
 
 	pic = Draw_CachePic ("gfx/pause.lmp");
-	Draw_Pic ( (vid.width - pic->width)/2, 
-		(vid.height - 48 - pic->height)/2, pic);
+	Draw_Fill (0,0, vid.width, vid.height,pic);
 }
 
 
@@ -448,9 +447,7 @@ void SCR_DrawLoading (void)
 	if (!scr_drawloading)
 		return;
 		
-	pic = Draw_CachePic ("gfx/loading.lmp");
-	Draw_Pic ( (vid.width - pic->width)/2, 
-		(vid.height - 48 - pic->height)/2, pic);
+	Draw_LoadingBG(vid.height);
 }
 
 
