@@ -1,0 +1,150 @@
+﻿  cd_win.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(48,85): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(57,87): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(71,114): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(84,114): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(130,126): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(145,126): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(161,48): warning C4311: 'type cast': pointer truncation from 'HWND' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(162,113): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(188,70): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(207,48): warning C4311: 'type cast': pointer truncation from 'HWND' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(208,92): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(232,48): warning C4311: 'type cast': pointer truncation from 'HWND' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(233,102): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(435,111): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(444,104): warning C4311: 'type cast': pointer truncation from 'LPVOID' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(447,60): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\cd_win.c(475,64): warning C4311: 'type cast': pointer truncation from 'void *' to 'DWORD'
+  chase.c
+  cl_demo.c
+  cl_input.c
+  cl_main.c
+  cl_parse.c
+  cl_tent.c
+  cmd.c
+  common.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\common.c(142,20): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\common.c(158,21): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\common.c(158,33): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+  conproc.c
+  console.c
+  crc.c
+  cvar.c
+  draw.c
+  d_edge.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_edge.c(198,40): warning C4311: 'type cast': pointer truncation from 'void *' to 'int'
+  d_fill.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_fill.c(61,45): warning C4311: 'type cast': pointer truncation from 'unsigned char *' to 'long'
+  d_init.c
+  d_modech.c
+  d_part.c
+  d_polyse.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_polyse.c(132,22): warning C4311: 'type cast': pointer truncation from 'spanpackage_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_polyse.c(132,60): warning C4312: 'type cast': conversion from 'long' to 'spanpackage_t *' of greater size
+  Generating Code...
+  Compiling...
+  d_scan.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_scan.c(422,19): warning C4311: 'type cast': pointer truncation from 'short *' to 'long'
+  d_sky.c
+  d_sprite.c
+  d_surf.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\d_surf.c(141,45): warning C4311: 'type cast': pointer truncation from 'byte *' to 'int'
+  d_vars.c
+  d_zpoint.c
+  host.c
+  host_cmd.c
+  in_win.c
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  keys.c
+  mathlib.c
+  menu.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  model.c
+  net_dgrm.c
+  net_loop.c
+  net_main.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(476,35): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(583,38): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(596,38): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(647,38): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(678,38): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\net_main.c(713,38): warning C4311: 'type cast': pointer truncation from 'qsocket_t *' to 'long'
+  net_vcr.c
+  net_win.c
+  net_wins.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  net_wipx.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  Generating Code...
+  Compiling...
+  nonintel.c
+  pr_cmds.c
+  pr_edict.c
+  pr_exec.c
+  r_aclip.c
+  r_alias.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_alias.c(713,27): warning C4311: 'type cast': pointer truncation from 'finalvert_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_alias.c(713,65): warning C4312: 'type cast': conversion from 'long' to 'finalvert_t *' of greater size
+  r_bsp.c
+  r_draw.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(457,46): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(457,74): warning C4312: 'type cast': conversion from 'unsigned long' to 'edge_t *' of greater size
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(544,34): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(544,58): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(546,43): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(547,34): warning C4312: 'type cast': conversion from 'unsigned long' to 'edge_t *' of greater size
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(590,34): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(590,58): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(592,43): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'unsigned long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_draw.c(593,34): warning C4312: 'type cast': conversion from 'unsigned long' to 'edge_t *' of greater size
+  r_edge.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_edge.c(671,40): warning C4311: 'type cast': pointer truncation from 'byte *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_edge.c(671,60): warning C4312: 'type cast': conversion from 'long' to 'espan_t *' of greater size
+  r_efrag.c
+  r_light.c
+  r_main.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(890,24): warning C4311: 'type cast': pointer truncation from 'edge_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(890,62): warning C4312: 'type cast': conversion from 'long' to 'edge_t *' of greater size
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(896,24): warning C4311: 'type cast': pointer truncation from 'surf_t *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(896,62): warning C4312: 'type cast': conversion from 'long' to 'surf_t *' of greater size
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(1061,22): warning C4311: 'type cast': pointer truncation from 'int *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_main.c(1064,29): warning C4311: 'type cast': pointer truncation from 'byte **' to 'long'
+  r_misc.c
+  r_part.c
+  r_sky.c
+  r_sprite.c
+  r_surf.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_surf.c(579,48): warning C4311: 'type cast': pointer truncation from 'unsigned short *' to 'long'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\r_surf.c(579,63): warning C4312: 'type cast': conversion from 'long' to 'unsigned short *' of greater size
+  r_vars.c
+  sbar.c
+  screen.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\screen.c(433,43): warning C4047: 'function': 'int' differs in levels of indirection from 'qpic_t *'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\screen.c(433,40): warning C4024: 'Draw_Fill': different types for formal and actual parameter 5
+  Generating Code...
+  Compiling...
+  snd_dma.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  snd_mem.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\snd_mem.c(238,52): warning C4311: 'type cast': pointer truncation from 'byte *' to 'int'
+  snd_mix.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  snd_win.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  sv_main.c
+  sv_move.c
+  sv_phys.c
+  sv_user.c
+  sys_win.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  vid_win.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\winquake.h(31,10): fatal error C1083: Cannot open include file: 'mgraph.h': No such file or directory
+  view.c
+  wad.c
+  world.c
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\world.c(287,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\world.c(824,11): warning C4311: 'type cast': pointer truncation from 'link_t *' to 'int'
+  zone.c
+  Generating Code...

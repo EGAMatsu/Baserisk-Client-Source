@@ -1,10 +1,7 @@
-﻿  screen.c
-C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\screen.c(433,43): warning C4047: 'function': 'int' differs in levels of indirection from 'qpic_t *'
-C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\screen.c(433,40): warning C4024: 'Draw_Fill': different types for formal and actual parameter 5
-C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\screen.c(450,16): warning C4013: 'Draw_LoadingBG' undefined; assuming extern returning int
+﻿  keys.c
   Generating code
-  10 of 1153 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+  0 of 1153 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    120 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   HandmadeQuake.vcxproj -> C:\Users\TheMiningBoy\Desktop\Baserisk\Files\Source\Client\WinQuake\HandmadeQuake\Release\HandmadeQuake.exe
