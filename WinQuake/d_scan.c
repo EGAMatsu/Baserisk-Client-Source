@@ -254,6 +254,9 @@ void Turbulent8 (espan_t *pspan)
 D_DrawSpans8
 =============
 */
+
+#define DITHER 1
+
 void D_DrawSpans8 (espan_t *pspan)
 {
 	int				count, spancount;
@@ -271,10 +274,20 @@ void D_DrawSpans8 (espan_t *pspan)
 	tdivz8stepu = d_tdivzstepu * 8;
 	zi8stepu = d_zistepu * 8;
 
-	do
-	{
-		pdest = (unsigned char *)((byte *)d_viewbuffer +
-				(screenwidth * pspan->v) + pspan->u);
+#if (DITHER)
+	int d_s, d_t;
+#endif
+
+	pbase = (unsigned char*)cacheblock;
+
+	do {
+		pdest = (unsigned char*)((byte*)d_viewbuffer + (screenwidth * pspan->v) + pspan->u);
+
+#if (DITHER)
+		// dither offsets
+		d_s = ((pspan->v & 1) << 16);
+		d_t = ((pspan->u & 1) << 16) ^ d_s;
+#endif
 
 		count = pspan->count;
 
@@ -299,14 +312,9 @@ void D_DrawSpans8 (espan_t *pspan)
 		else if (t < 0)
 			t = 0;
 
-		do
-		{
-		// calculate s and t at the far end of the span
-			if (count >= 8)
-				spancount = 8;
-			else
-				spancount = count;
-
+		do {
+			// calculate s and t at the far end of the span
+			spancount = (count >= 8) ? 8 : count;
 			count -= spancount;
 
 			if (count)
@@ -367,11 +375,22 @@ void D_DrawSpans8 (espan_t *pspan)
 				}
 			}
 
-			do
-			{
-				*pdest++ = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
+			do {
+#if (DITHER)
+				// compute dither offsets for texel
+				int s_offs = (s - d_s + 0x8000);
+				int t_offs = (t - d_t + 0x8000);
+				// advance the dither pattern
+				d_s ^= 0x10000;
+#else
+				int s_offs = s;
+				int t_offs = t;
+#endif
+				* pdest++ = *(pbase + (s_offs >> 16) +
+					(t_offs >> 16) * cachewidth);
 				s += sstep;
 				t += tstep;
+
 			} while (--spancount > 0);
 
 			s = snext;
